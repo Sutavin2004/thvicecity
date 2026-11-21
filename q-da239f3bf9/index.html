@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ThViceCity · TikTok queue</title>
+<style>
+body{margin:0;background:#120a24;color:#f3eaff;font:16px -apple-system,system-ui,sans-serif}
+h1{font-size:20px;margin:16px} p.note{margin:0 16px 12px;color:#bfb3d9;font-size:14px}
+.card{background:#1e1236;margin:12px;border-radius:16px;padding:12px;box-shadow:0 2px 10px #0006}
+.meta{font-size:14px;color:#d6c8f5;margin-bottom:8px} .when{color:#ff8fd0}
+video{width:100%;max-height:70vh;border-radius:12px;background:#000}
+.row{display:flex;gap:8px;margin:10px 0}
+.btn{flex:1;text-align:center;padding:12px;border-radius:12px;border:0;font-size:16px;font-weight:600;text-decoration:none}
+.dl{background:#ff2e97;color:#fff} .cp{background:#2ee6ff;color:#120a24}
+textarea{width:100%;box-sizing:border-box;min-height:84px;border-radius:10px;border:0;padding:8px;font-size:15px;background:#2a1a4a;color:#f3eaff}
+</style></head><body>
+<h1>🌴 TikTok queue (2 clips)</h1>
+<p class="note">Newest first. Tap Download, then post the video in TikTok and paste the caption. Updated automatically every hour.</p>
+
+<div class="card">
+  <div class="meta"><b>Lacy</b> · score 7/10 · added Nov 20
+  · <span class='when'>post at 6:00 PM</span></div>
+  <video src="lacy-alligator.mp4" controls playsinline preload="metadata"></video>
+  <div class="row">
+    <a class="btn dl" href="lacy-alligator.mp4" download>⬇️ Download video</a>
+    <button class="btn cp" onclick="cp(0, this)">📋 Copy caption</button>
+  </div>
+  <textarea id="c0" readonly>Lacy dove into an alligator and lost everything #LACY Would you have dived in? 👇 #gta6 #gtavi #fyp #gaming</textarea>
+</div>
+<div class="card">
+  <div class="meta"><b>KreekCraft</b> · score 6/10 · added Nov 20
+  · <span class='when'>post at tomorrow 12:00 PM</span></div>
+  <video src="kreek-car-theft.mp4" controls playsinline preload="metadata"></video>
+  <div class="row">
+    <a class="btn dl" href="kreek-car-theft.mp4" download>⬇️ Download video</a>
+    <button class="btn cp" onclick="cp(1, this)">📋 Copy caption</button>
+  </div>
+  <textarea id="c1" readonly>Watch KreekCraft on YouTube and Twitch KreekCraft&#x27;s GTA 6 car-theft brain freeze #KreekCraft Would you have done better? 👇 #gta6 #gtavi #fyp #gaming</textarea>
+</div>
+<script>
+function cp(i,b){const t=document.getElementById('c'+i);t.select();t.setSelectionRange(0,99999);
+navigator.clipboard?navigator.clipboard.writeText(t.value).then(()=>ok(b),()=>{document.execCommand('copy');ok(b)}):(document.execCommand('copy'),ok(b));}
+function ok(b){const o=b.textContent;b.textContent='✅ Copied';setTimeout(()=>b.textContent=o,1500)}
+</script></body></html>
